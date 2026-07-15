@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Happy Birthday Vasudev</title>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+body{
+font-family:Poppins,sans-serif;
+background:linear-gradient(135deg,#0a1931,#123d73,#1f6fb2);
+color:#fff;
+overflow-x:hidden;
+padding:40px 20px;
+}
+.popup{
+position:fixed;
+inset:0;
+background:rgba(0,0,0,.72);
+display:flex;
+justify-content:center;
+align-items:center;
+z-index:999;
+}
+.popup-box{
+background:#fff;
+color:#222;
+width:min(420px,92%);
+padding:32px;
+border-radius:22px;
+text-align:center;
+display:flex;
+flex-direction:column;
+align-items:center;
+box-shadow:0 20px 60px rgba(0,0,0,.35);
+}
+.photo{
+width:140px;
+height:140px;
+border-radius:50%;
+display:block;
+margin:0 auto 20px auto;
+background:url('vasudev.jpg') center center / cover no-repeat,#ddd;
+border:5px solid #d4af37;
+box-shadow:0 10px 30px rgba(0,0,0,.25);
+}
+.popup-box h2{margin-bottom:15px}
+.popup-box p{line-height:1.7}
+button{
+margin-top:22px;
+padding:12px 28px;
+border:none;
+border-radius:30px;
+background:#123d73;
+color:#fff;
+cursor:pointer;
+font-size:16px;
+}
+.container{
+max-width:900px;
+margin:40px auto;
+padding:50px;
+background:rgba(255,255,255,.12);
+backdrop-filter:blur(16px);
+border-radius:24px;
+box-shadow:0 20px 60px rgba(0,0,0,.35);
+}
+h1{
+font-family:"Great Vibes",cursive;
+font-size:72px;
+text-align:center;
+color:#f5d67b;
+}
+.sub{
+text-align:center;
+margin:12px 0 35px;
+opacity:.9;
+}
+.letter{
+font-family:"Great Vibes",cursive;
+font-size:30px;
+line-height:1.8;
+color:#fffdf5;
+}
+.letter p{margin:20px 0}
+.memory{
+background:rgba(255,255,255,.08);
+padding:20px;
+border-left:4px solid #d4af37;
+border-radius:10px;
+margin:25px 0;
+}
+.sign{
+font-size:36px;
+margin-top:35px;
+}
+.footer{
+text-align:center;
+margin-top:30px;
+opacity:.7;
+}
+.sparkle{
+position:fixed;
+bottom:-20px;
+font-size:20px;
+opacity:.35;
+pointer-events:none;
+animation:rise 8s linear forwards;
+}
+@keyframes rise{
+to{transform:translateY(-110vh);opacity:0;}
+}
+</style>
+</head>
+<body>
+
+<div class="popup" id="popup">
+  <div class="popup-box">
+    <div class="photo"></div>
+    <h2>🎉 Happy Birthday Vasudev 🎂</h2>
+    <p>May this birthday bring you happiness, peace, good health, success and countless beautiful memories. Thank you for being an amazing mentor and an even better human being.</p>
+    <button onclick="openLetter()">Open My Letter ❤️</button>
+  </div>
+</div>
+
+<div class="container">
+<h1>Happy Birthday Vasudev</h1>
+<div class="sub">A Letter From My Heart</div>
+
+<div class="letter">
+<p>Dear Vasudev,</p>
+
+<p>Before you start reading this I just want to tell you one thing. This page has been designed with the help of AI but every single word written here has been typed by me. Every feeling in this letter comes straight from my heart.</p>
+
+<p>You are my very first mentor in this company. Even though you were an intern and I joined as a full time engineer I have always looked at you as my senior. The way you explained things was so simple that even difficult topics started feeling easy. From project setup to Git push to branch merge and all those small things that I did not know you patiently taught me everything.</p>
+
+<div class="memory">
+<p>I still remember those first few days when I would get stuck on even the smallest things. Even pushing code felt confusing to me. You never made me feel uncomfortable for asking basic questions. Instead you patiently explained everything until I understood it.</p>
+
+<p>I also remember those evenings when work pressure became too much. I would come to you not only with technical questions but sometimes just to talk. You always listened calmly. You probably do not even realize how much those conversations helped me.</p>
+</div>
+
+<p>Bro the best thing about you is not only your technical knowledge. It is your nature. Whenever I got stuck you never said you were busy. You stayed with me until the issue was solved. Honestly I do not think anyone else in this company would have gone out of their way to help me the way you did.</p>
+
+<p>Your calmness is something I genuinely admire. It inspires me and I hope one day I can develop the same patience and kindness that you have shown to me.</p>
+
+<p>Today is a very special day for me because it is also my father's birthday. Until now this date was special because of him. From today onwards it has one more beautiful reason. It is your birthday too.</p>
+
+<p>People always say you never forget your first mentor and I know that is true. I will always remember the person who helped me take my first steps in my professional journey.</p>
+
+<p>You might feel this message is a little emotional or maybe a little long but I really wanted to say thank you bro. Thank you for helping me in every possible way. Thank you for believing in me and making this journey so much easier.</p>
+
+<p>I sincerely wish you lots of happiness good health success and everything you dream of. May you continue to grow keep smiling and keep inspiring people just the way you inspired me.</p>
+
+<p>Happy Birthday once again bro. You truly deserve all the happiness in the world.</p>
+
+<div class="sign">With lots of gratitude ❤️<br><b>Ruturaj</b></div>
+</div>
+
+<div class="footer">Made especially for Vasudev</div>
+</div>
+
+<script>
+function openLetter(){
+ document.getElementById('popup').style.display='none';
+ for(let i=0;i<18;i++){
+   const s=document.createElement('div');
+   s.className='sparkle';
+   s.innerHTML=Math.random()>0.5?'✨':'⭐';
+   s.style.left=Math.random()*100+'vw';
+   s.style.animationDuration=(6+Math.random()*3)+'s';
+   document.body.appendChild(s);
+   setTimeout(()=>s.remove(),9000);
+ }
+}
+</script>
+
+</body>
+</html>
